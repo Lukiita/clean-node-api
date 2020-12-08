@@ -1,0 +1,5 @@
+{
+    "rooks": {
+        "pre-commit": "lint-staged"
+    }
+}
