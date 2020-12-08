@@ -1,9 +1,9 @@
 import { InvalidParamError, MissingParamError, ServerError } from "../errors"
 import { EmailValidator } from "../protocols"
-import { SignupController } from "./signup"
+import { SignUpController } from "./signup"
 
 interface SutTypes {
-  sut: SignupController,
+  sut: SignUpController,
   emailValidatorStub: EmailValidator
 }
 
@@ -20,7 +20,7 @@ const makeEmailValidator = (): EmailValidator => {
 
 const makeSut = (): SutTypes => {
   const emailValidatorStub = makeEmailValidator()
-  const sut = new SignupController(emailValidatorStub)
+  const sut = new SignUpController(emailValidatorStub)
   return {
     sut,
     emailValidatorStub

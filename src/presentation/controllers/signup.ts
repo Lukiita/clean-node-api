@@ -2,7 +2,7 @@ import { InvalidParamError, MissingParamError } from "../errors"
 import { badRequest, serverError } from "../helpers/http-helper"
 import { Controller, EmailValidator, HttpRequest, HttpResponse } from "../protocols"
 
-export class SignupController implements Controller {
+export class SignUpController implements Controller {
     private readonly emailValidator: EmailValidator;
 
     constructor(emailValidator: EmailValidator) {
